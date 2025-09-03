@@ -10,25 +10,52 @@
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 24px;
+        }
+        .photo-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .gallery img {
-            width: 200px;
+            width: 250px;
             height: auto;
             border: 1px solid #ccc;
             border-radius: 8px;
+        }
+        .photo-block h3 {
+            margin-bottom: 8px;
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #2a5d9f;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <h1>Project 0: Image Gallery</h1>
-    <a href="../index.html">Back to Portfolio</a>
+    <a href="../index.html">Back to Main Page</a>
     <div class="gallery">
-        <img src="media/selfie.jpg" alt="Close up Photo of me">
-        <img src="media/zoom_face.jpg" alt="Zoomed Photo of me">
-        <img src="media/zoom_road.jpg" alt="Zoomed Photo of road">
-        <img src="media/road.jpg" alt="Close up Photo of road">
-        <img src="media/GIF.gif" alt="Animated GIF of cycles">
+        <div class="photo-block">
+            <h3>Selfie</h3>
+            <img src="media/selfie.jpg" alt="Close up Photo of me">
+        </div>
+        <div class="photo-block">
+            <h3>Zoomed Face</h3>
+            <img src="media/zoom_face.jpg" alt="Zoomed Photo of me">
+        </div>
+        <div class="photo-block">
+            <h3>Zoomed Road</h3>
+            <img src="media/zoom_road.jpg" alt="Zoomed Photo of road">
+        </div>
+        <div class="photo-block">
+            <h3>Road Close-up</h3>
+            <img src="media/road.jpg" alt="Close up Photo of road">
+        </div>
+        <div class="photo-block">
+            <h3>Cycles Animation</h3>
+            <img src="media/GIF.gif" alt="Animated GIF of cycles">
+        </div>
     </div>
 </body>
 </html>
